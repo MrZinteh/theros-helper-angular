@@ -1,0 +1,9 @@
+<div
+  class="justify-self-stretch flex flex-row justify-around m-2.5 p-2.5 text-white rounded-2xl bg-gradient-to-r from-theros-start to-theros-end">
+  <div *ngFor="let tab of tabs"
+       class="text-lg px-8 py-2 inline-block relative cursor-pointer after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0F977C] after:origin-bottom-right after:transition-transform after:hover:scale-x-1 after:hover:origin-bottom-left hover:italic"
+       [ngClass]="tab === selectedTab ? 'italic' : 'non-italic'"
+       (click)="selectTab(tab)">
+    {{tab}}
+  </div>
+</div>

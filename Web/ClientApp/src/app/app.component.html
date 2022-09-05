@@ -1,0 +1,20 @@
+<body class="h-full overflow-hidden">
+<header>
+  <app-header></app-header>
+</header>
+<section>
+  <app-navbar></app-navbar>
+</section>
+<section *ngIf="selectedTab === 'Name Generator'">
+  <app-name-generator></app-name-generator>
+</section>
+<section *ngIf="selectedTab === 'Name Generator'">
+  <app-name-viewer></app-name-viewer>
+</section>
+<section *ngIf="selectedTab === 'Important NPC\'s'">
+  <app-important-npcs></app-important-npcs>
+</section>
+<section *ngIf="selectedTab === 'Players'">
+  <app-players></app-players>
+</section>
+</body>

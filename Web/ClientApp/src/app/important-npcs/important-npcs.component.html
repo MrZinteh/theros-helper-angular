@@ -1,0 +1,82 @@
+<div class="flex flex-row flex-wrap justify-self-stretch content-between justify-around">
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Prodotis'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Prodotis')">
+      <img src="assets/prodotis_portrait.png" alt="Prodotis Timimenos" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Prodotis Timimenos</b></h4>
+        <p class="my-1">Host and current champion of the Iroan games and councilmember of the Akroan military council</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Prodotis'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Pompous</li>
+          <li>Champion of Iroas</li>
+          <li>Helpful to upstart heroes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Melantha'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Melantha')">
+      <img src="assets/melantha_portrait.png" alt="Melantha Zotikos" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Melantha Zotikos</b></h4>
+        <p class="my-1">Personal assistant to Prodotis and a devout follower of Erebos</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Melantha'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Seems aloof</li>
+          <li>Powerful cleric</li>
+          <li>Lost her family</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Anni'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Anni')">
+      <img src="assets/anni_portrait.png" alt="Anni Metropoulou" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Anni Metropoulou</b></h4>
+        <p class="my-1">Tinkerer extraordinaire and personal smith to Prodotis</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Anni'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Malformed from birth</li>
+          <li>Adopted by Prodotis</li>
+          <li>Follower to Purphoros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Brutus'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Brutus')">
+      <img src="assets/brutus_portrait.PNG" alt="Brutus Olantopoulos" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Brutus Olantopoulos</b></h4>
+        <p class="my-1">Captain Of The Drakos</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Brutus'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Originally from the sunken city of Olantin</li>
+          <li>Fiercely loyal to Prodotis</li>
+          <li>Triton family is disgusted by choice to be above water</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Brimaz'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Brimaz')">
+      <img src="assets/brimaz_portrait.PNG" alt="Speaker Brimaz" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Speaker Brimaz</b></h4>
+        <p class="my-1">Speaker of The Sunset Pride</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Brimaz'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Leader of the Sunset Pride / Doomwoken</li>
+          <li>Hates Gods and wants to see them fall</li>
+          <li>Took his pride to the island of Butrescu generations ago</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
