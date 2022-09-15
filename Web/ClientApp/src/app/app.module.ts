@@ -8,11 +8,11 @@ import {BackendService} from "./shared/services/backend.service";
 import {NavBarService} from "./shared/services/nav-bar.service";
 import { NavbarComponent } from './navbar/navbar.component';
 import {SharedModule} from "./shared/shared.module";
-import {NameGeneratorModule} from "./name-generator/name-generator.module";
-import {NameViewerModule} from "./name-viewer/name-viewer.module";
 import {PlayersModule} from "./players/players.module";
 import {ImportantNpcsModule} from "./important-npcs/important-npcs.module";
 import {GodsModule} from "./gods/gods.module";
+import { AppRoutingModule } from './app-routing.module';
+import {NamesModule} from "./names/names.module";
 
 @NgModule({
   declarations: [
@@ -25,11 +25,11 @@ import {GodsModule} from "./gods/gods.module";
     HttpClientModule,
     FormsModule,
     SharedModule,
-    NameGeneratorModule,
-    NameViewerModule,
     PlayersModule,
     ImportantNpcsModule,
-    GodsModule
+    GodsModule,
+    AppRoutingModule,
+    NamesModule
   ],
   providers: [
     BackendService,
