@@ -6,7 +6,7 @@ import {Subject} from "rxjs";
 })
 export class NavBarService {
 
-  _tabs: string[] = ["Name Generator", "Map", "Important NPC's", "Players"];
+  _tabs: string[] = ["Name Generator", "Gods", "Important NPC's", "Players"];
   _selectedTab: string = "Name Generator";
   selectedTabSubject: Subject<string> = new Subject<string>();
 

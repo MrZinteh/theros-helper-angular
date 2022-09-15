@@ -12,6 +12,7 @@ import {NameGeneratorModule} from "./name-generator/name-generator.module";
 import {NameViewerModule} from "./name-viewer/name-viewer.module";
 import {PlayersModule} from "./players/players.module";
 import {ImportantNpcsModule} from "./important-npcs/important-npcs.module";
+import {GodsModule} from "./gods/gods.module";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {ImportantNpcsModule} from "./important-npcs/important-npcs.module";
     NameGeneratorModule,
     NameViewerModule,
     PlayersModule,
-    ImportantNpcsModule
+    ImportantNpcsModule,
+    GodsModule
   ],
   providers: [
     BackendService,
