@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using API.Db;
 using API.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,16 @@ builder.Services.AddControllers()
 
 builder.Services.AddDbContext<GreekNameContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration["DefaultConnection"]);
+    if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+    {
+        var m = Regex.Match(Environment.GetEnvironmentVariable("DATABASE_URL")!, @"postgres://(.*):(.*)@(.*):(.*)/(.*)");
+        options.UseNpgsql($"Server={m.Groups[3]};Port={m.Groups[4]};User Id={m.Groups[1]};Password={m.Groups[2]};Database={m.Groups[5]};sslmode=Prefer;Trust Server Certificate=true");
+    } 
+    else // In Development Environment
+    {
+        // So, use a local Connection
+        options.UseNpgsql(builder.Configuration["DefaultConnection"]);
+    }
 });
 
 // Repositories and services
