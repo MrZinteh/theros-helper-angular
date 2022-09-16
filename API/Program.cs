@@ -16,7 +16,7 @@ builder.Services.AddControllers()
 
 builder.Services.AddDbContext<GreekNameContext>(options =>
 {
-    options.UseNpgsql("Host=ec2-52-31-217-108.eu-west-1.compute.amazonaws.com;Database=d2pma75ao4n73m;Username=yaayqvhkxyshul;Password=e95b506443202bd05ff40ed31337f40f3407b1501a3e02eee832fe38f7dcd602");
+    options.UseNpgsql(builder.Configuration["DefaultConnection"]);
 });
 
 // Repositories and services
