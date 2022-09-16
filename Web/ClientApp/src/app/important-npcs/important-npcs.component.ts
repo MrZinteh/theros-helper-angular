@@ -12,6 +12,7 @@ export class ImportantNpcsComponent implements OnInit {
     "Anni": false,
     "Brutus": false,
     "Brimaz": false,
+    "Berthazu": false,
   }
 
   constructor() { }

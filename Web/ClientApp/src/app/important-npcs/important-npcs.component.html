@@ -1,4 +1,4 @@
-<div class="flex flex-row flex-wrap justify-self-stretch content-between justify-around">
+<div class="flex flex-row flex-wrap justify-self-stretch content-between justify-around mb-4">
   <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Prodotis'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
     <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Prodotis')">
       <img src="assets/prodotis_portrait.png" alt="Prodotis Timimenos" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
@@ -75,6 +75,22 @@
           <li>Leader of the Sunset Pride / Doomwoken</li>
           <li>Hates Gods and wants to see them fall</li>
           <li>Took his pride to the island of Butrescu generations ago to live away from the eyes of the Gods</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Berthazu'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Berthazu')">
+      <img src="assets/berthazu_portrait.png" alt="Berthazu" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Berthazu</b></h4>
+        <p class="my-1">Karametra's experiment / Farmer</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Berthazu'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Created as an experiment to learn to farm</li>
+          <li>Incredibly anxious about his place in the world</li>
+          <li>Will one day learn to farm non-toxic creatures and plants</li>
         </ul>
       </div>
     </div>
