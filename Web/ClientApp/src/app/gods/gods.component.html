@@ -1,11 +1,11 @@
 <div class="justify-self-stretch">
-  <div class="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+  <div class="mx-auto max-w-7xl py-4 px-4 text-center sm:px-6 lg:px-8">
     <div class="space-y-8 sm:space-y-12">
       <ul role="list"
           class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6">
         <li *ngFor="let god of gods">
-          <div class="space-y-4">
-            <a>
+          <a [routerLink]="god.name">
+            <div class="space-y-4">
               <img class="mx-auto h-20 w-24 rounded-full lg:h-24 lg:w-28" src="../../assets/{{god.img}}"
                    alt="{{god.name}}">
               <div class="space-y-2">
@@ -14,8 +14,8 @@
                   <p class="text-indigo-600">{{god.domain}}</p>
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>

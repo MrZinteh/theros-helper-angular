@@ -7,6 +7,7 @@ import {ImportantNpcsComponent} from "./important-npcs/important-npcs.component"
 import {PlayersComponent} from "./players/players.component";
 
 const routes: Routes = [
+  { path: '', component: NamesComponent },
   { path: 'NameGenerator', component: NamesComponent },
   { path: 'Gods', loadChildren: () => import('./gods/gods-routing.module').then(m => m.GodsRoutingModule) },
   { path: 'ImportantNPCs', component: ImportantNpcsComponent },

@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { GodsComponent } from './gods.component';
 import {RouterModule} from "@angular/router";
 import {SharedModule} from "../shared/shared.module";
+import { GodDetailsComponent } from './details/god-details.component';
 
 @NgModule({
     declarations: [
-        GodsComponent
+        GodsComponent,
+        GodDetailsComponent
     ],
     imports: [
         CommonModule,

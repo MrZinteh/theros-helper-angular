@@ -1,0 +1,34 @@
+<div class="justify-self-stretch">
+  <div class="px-2">
+    <img src="assets/{{god.img}}" alt="{{god.name}}"/>
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl divide-y-2 divide-gray-200">
+          <h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{god.name}}, {{god.domain}}</h2>
+          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+            <div *ngFor="let note of god.notes; let i = index" class="pt-6">
+              <dt class="text-lg">
+                <!-- Expand/collapse button -->
+                <button type="button" class="flex w-full items-start justify-between text-left text-gray-400" (click)="onExpand(i)">
+                  <span class="font-medium text-gray-900">{{note.title}}</span>
+                  <span class="ml-6 flex h-7 items-center">
+                <svg [ngClass]="note.expanded ? '-rotate-180' : 'rotate-0'" class="h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+                </button>
+              </dt>
+              <dd [ngClass]="note.expanded ? '' : 'hidden'" class="mt-2 pr-12">
+                <ul role="list" class="list-disc mx-3">
+                  <li *ngFor="let item of note.info">
+                    <p class="text-base text-gray-500">{{item}}</p>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
